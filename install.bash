@@ -4,7 +4,7 @@ echo "Installing Git and Perl"
 sudo apt -y install git perl wget
 
 echo "Installing TurtleSim"
-sudo apt install ros-$(rosversion -d)-turtlesim
+sudo apt install ros-melodic-turtlesim
 
 echo "Cloning motor driver firmware to ~/Documents/MotorDriver"
 mkdir -p ~/Documents/MotorDriver/{Lib, Formware, DistributionBoard}
