@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "DistributionBoard",
+			"path": "."
+		},
+		{
+			"name": "MotorDriver",
+			"path": "../MotorDriver"
+		}
+	],
+	"settings": {}
+}
