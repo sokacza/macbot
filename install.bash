@@ -1,41 +1,44 @@
 #!/bin/bash
 
 touch ./install_log.txt
-mkdir ./temporary
+mkdir temporary
 
 
 sudo apt -y install git perl wget
-echo "Installed packages" >> ./install_log.txt
+sudo echo "Installed packages" >> ./install_log.txt
 
 
  
 sudo apt install ros-melodic-turtlesim 
-echo "Installed ROS TurtleSim" >> ./install_log.txt 
+sudo echo "Installed ROS TurtleSim" >> ./install_log.txt 
 
 
 
-git clone --branch master https://github.com/YDLIDAR/YDLidar-SDK.git ./temporary
-echo "Cloned YDLiDAR SDK" >> ./install_log.txt 
-mkdir ./temporary/build
+git clone --branch master https://github.com/YDLIDAR/YDLidar-SDK.git ./temporary/YDLidar-SDK
+sudo echo "Cloned YDLiDAR SDK" >> ./install_log.txt 
+mkdir ./temporary/YDLidar-SDK/build
 cd temporary/YDLidar-SDK/build
 cmake ..
 make
 sudo make install
-cd ../..
+cd ../../..
 echo "Successfully installed YDLiDAR SDK"
 
-
+mkdir temporary/diff_drive/
 /bin/bash ./ros/diff_drive/clone_install.bash
-echo "Installed clone diff drive" >> ./install_log.txt
- 
+sudo sudo echo "Installed clone diff drive" >> ./install_log.txt
+
+mkdir temporary/dwa_local_planner/
 /bin/bash ./ros/dwa_local_planner/clone_install.bash
-echo "Installed clone dwa local planner" >> ./install_log.txt
+sudo echo "Installed clone dwa local planner" >> ./install_log.txt
 
+mkdir temporary/ydlidar_ros_driver/
 /bin/bash ./ros/ydlidar_ros_driver/clone_install.bash
-echo "Installed clone ydlidar_ros_driver" >> ./install_log.txt
+sudo echo "Installed clone ydlidar_ros_driver" >> ./install_log.txt
 
+mkdir temporary/macbot/
 /bin/bash ./ros/macbot/clone_install.bash
-echo "Installed clone macbot" >> ./install_log.txt
+sudo echo "Installed clone macbot" >> ./install_log.txt
 
 mkdir -p ./macbot_ws/src
 cd macbot_ws/src

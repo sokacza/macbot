@@ -4,17 +4,7 @@ touch ./install_log.txt
 mkdir ./temporary
 
 
-sudo apt -y install git perl wget
-echo "Installed packages" >> ./install_log.txt
-
-
- 
-sudo apt install ros-melodic-turtlesim 
-echo "Installed ROS TurtleSim" >> ./install_log.txt 
-
-
-
-git clone --branch master https://github.com/YDLIDAR/YDLidar-SDK.git ./temporary
+git clone --branch master https://github.com/YDLIDAR/YDLidar-SDK.git temporary/YDLidar-SDK
 echo "Cloned YDLiDAR SDK" >> ./install_log.txt 
 mkdir ./temporary/build
 cd temporary/YDLidar-SDK/build
@@ -26,18 +16,18 @@ echo "Successfully installed YDLiDAR SDK"
 
 
 /bin/bash ./ros/diff_drive/old_install.bash
-echo "Installed old diff drive" >> ./install_log.txt
+sudo echo "Installed old diff drive" >> install_log.txt
  
-/bin/bash ./ros/dwa_local_planner/cold_install.bash
-echo "Installed old dwa local planner" >> ./install_log.txt
+/bin/bash ./ros/dwa_local_planner/old_install.bash
+sudo echo "Installed old dwa local planner" >> install_log.txt
 
 /bin/bash ./ros/ydlidar_ros_driver/old_install.bash
-echo "Installed cold ydlidar_ros_driver" >> ./install_log.txt
+sudo echo "Installed cold ydlidar_ros_driver" >> install_log.txt
 
 /bin/bash ./ros/macbot/old_install.bash
-echo "Installed old macbot" >> ./install_log.txt
+sudo echo "Installed old macbot" >> install_log.txt
 
-mkdir -p ./macbot_ws/src
+mkdir -p macbot_ws/src
 cd macbot_ws/src
 catkin_init_workspace
 cd ..
@@ -47,13 +37,13 @@ echo "Created ROS workspace" >> ../install_log.txt
 
 mv ../temporary/diff_drive src
 catkin_make
-echo "Built diff_drive" >> ../install_log.txt
+sudo echo "Built diff_drive" >> ../install_log.txt
 mv ../temporary/dwa_local_planner src
 catkin_make
-echo "Built dwa_local_planner" >> ../install_log.txt
+sudo echo "Built dwa_local_planner" >> ../install_log.txt
 mv ../temporary/ydlidar_ros_driver src
 catkin_make
-echo "Built ydlidar_ros_driver" >> ../install_log.txt
+sudo echo "Built ydlidar_ros_driver" >> ../install_log.txt
 mv ../temporary/macbot src
 catkin_make
 echo "Built macbot" >> ../install_log.txt

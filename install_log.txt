@@ -1,0 +1,80 @@
+Installed packages
+Installed ROS TurtleSim
+Cloned YDLiDAR SDK
+Installed packages
+Installed ROS TurtleSim
+Cloned YDLiDAR SDK
+Installed clone diff drive
+Installed clone dwa local planner
+Installed clone ydlidar_ros_driver
+Installed clone macbot
+Created ROS workspace
+Built diff_drive
+Built dwa_local_planner
+Built ydlidar_ros_driver
+Built macbot
+Cleaning temp files
+DONE!
+Installed packages
+Installed ROS TurtleSim
+Cloned YDLiDAR SDK
+Installed packages
+Installed ROS TurtleSim
+Cloned YDLiDAR SDK
+Installed clone diff drive
+Installed clone dwa local planner
+Installed clone ydlidar_ros_driver
+Installed clone macbot
+Created ROS workspace
+Built diff_drive
+Built dwa_local_planner
+Built ydlidar_ros_driver
+Built macbot
+Cleaning temp files
+DONE!
+Installed packages
+Installed ROS TurtleSim
+Cloned YDLiDAR SDK
+Installed clone diff drive
+Installed clone dwa local planner
+Installed clone ydlidar_ros_driver
+Installed clone macbot
+Created ROS workspace
+Built diff_drive
+Built dwa_local_planner
+Built ydlidar_ros_driver
+Built macbot
+Cleaning temp files
+DONE!
+Installed packages
+Installed ROS TurtleSim
+Cloned YDLiDAR SDK
+Installed clone diff drive
+Installed clone dwa local planner
+Installed clone ydlidar_ros_driver
+Installed clone macbot
+Created ROS workspace
+Built diff_drive
+Built dwa_local_planner
+Built ydlidar_ros_driver
+Built macbot
+Cleaning temp files
+DONE!
+Installed packages
+Installed ROS TurtleSim
+Cloned YDLiDAR SDK
+Installed clone diff drive
+Installed clone dwa local planner
+Installed clone ydlidar_ros_driver
+Installed clone macbot
+Created ROS workspace
+Built diff_drive
+Built dwa_local_planner
+Built ydlidar_ros_driver
+Built macbot
+Cleaning temp files
+DONE!
+Installed packages
+Installed ROS TurtleSim
+Cloned YDLiDAR SDK
+Cloned YDLiDAR SDK
