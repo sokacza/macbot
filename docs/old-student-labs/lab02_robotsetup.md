@@ -54,7 +54,7 @@ Ensure that the Git version control tool is installed. Do this by using the pack
 
 **sudo apt install git**
 
-![](<../.gitbook/assets/1 (1).png>)
+![](<../.gitbook/assets/1 (2).png>)
 
 Next, open a new terminal window and navigate to **\~/\<catkin\_workspace\_name>/src.**
 
@@ -68,21 +68,21 @@ Clone the YDLidar\_ROS remote github repository into your catkin workspace sourc
 
 Build the workspace by changing to the workspace root directory **\~/\<catkin\_workspace\_name>** and running **catkin\_make**.
 
-![](<../.gitbook/assets/4 (1).png>)
+![](<../.gitbook/assets/4 (2).png>)
 
 ### Setting Up the LiDAR Publisher Node <a href="#_toc75866304" id="_toc75866304"></a>
 
-![](<../.gitbook/assets/5 (1).jpeg>)
+![](../.gitbook/assets/5.jpeg)
 
 Navigate to and open **\~/catkin\_ws/src/macbot/macbot\_sensors/launch/lidar.launch**
 
-![](../.gitbook/assets/6.png)
+![](<../.gitbook/assets/6 (1).png>)
 
 Alternatively, if a GUI is preferred GEDIT or VSCode are great options.
 
-![](../.gitbook/assets/7.png)
+![](<../.gitbook/assets/7 (1).png>)
 
-![](<../.gitbook/assets/8 (1).png>)
+![](../.gitbook/assets/8.png)
 
 First, the YDLIDAR node must be added in our launch file. Since there are different models of LiDAR available from this company, the parameters must be set as outlined in the README.md file located in the YDLidar\_ROS GitHub repository([https://github.com/YDLIDAR/ydlidar\_ros](https://github.com/YDLIDAR/ydlidar\_ros)).. The model provided is the **X2L LiDAR** and the parameters specific to this model must be configured according to the settings listed on the packages GitHub page One thing to keep in mind is that the **frame\_id** of the LiDAR node is changed to **/laser** in order to have a functioning TF Tree. A transform tree is another way of describing transforms that influence each other and branch out in a tree hierarchy.
 
@@ -106,7 +106,7 @@ First, the YDLIDAR node must be added in our launch file. Since there are differ
 
 ![Text
 
-Description automatically generated](../.gitbook/assets/9.png)
+Description automatically generated](<../.gitbook/assets/9 (1).png>)
 
 And as a reminder, in the **macbot\_description/urdf/robot\_textured.xacro** file, the LiDAR child link is referred to as:
 
@@ -156,7 +156,7 @@ Motor Drivers → Distribution Board → CAN Gateway → Jetson Nano
 
 The role of the distribution board is to distribute power and communicate with devices. It powers the motors and handles position feedback from the encoders. The development environment that will be used to program the distribution board is PlatformIO. PlatformIO is installed on top of existing editors and includes support for a wide variety of microprocessors and well as access to a large repository of compatible libraries. However, in this case some custom libraries will be used that cannot be found using the library manager.
 
-![](../.gitbook/assets/11.png)
+![](<../.gitbook/assets/11 (1).png>)
 
 Please add the following libraries to the PlatformIO project:
 
@@ -166,7 +166,7 @@ Please add the following libraries to the PlatformIO project:
 
 They are added by downloading and extracting each library. Then by dragging each library into the <**project\_name>/lib/** folder.
 
-![](<../.gitbook/assets/12 (1).png>)
+![](../.gitbook/assets/12.png)
 
 The program that will be flashed to the microcontroller aboard the distribution board can be found here:
 
@@ -174,7 +174,7 @@ Distribution Board Code ([https://code.roboteurs.com/snippets/10](https://code.r
 
 Connect to the board using USB-C.
 
-![](<../.gitbook/assets/13 (1).png>)
+![](../.gitbook/assets/13.png)
 
 Looking at the code, there is a **goLink** object called **myLink** that allows for communication with everything in our system.
 

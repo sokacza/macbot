@@ -4,6 +4,10 @@
 * [Project Install](install.md)
 * [Page 1](page-1.md)
 
+## 📖 Student Labs
+
+* [Student Labs](student-labs/student-labs.md)
+
 ## Old Student Labs
 
 * [Lab01\_Introduction](old-student-labs/lab01\_introduction.md)

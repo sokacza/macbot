@@ -6,7 +6,7 @@
 PDF Format
 {% endfile %}
 
-{% file src="../.gitbook/assets/Lab04_Navigation (1).docx" %}
+{% file src="../.gitbook/assets/Lab04_Navigation.docx" %}
 WORD Format
 {% endfile %}
 
@@ -78,7 +78,7 @@ Move\_base is a ROS package that coordinates between global planner and the loca
 
 ![Text
 
-Description automatically generated](../.gitbook/assets/1.png)
+Description automatically generated](<../.gitbook/assets/1 (1).png>)
 
 It is advised to read through the following guides before attempting to modify planning parameters. Changing these values could impact the expected movement of the robot. Ensure that the programmer has ample floor space to test.
 
@@ -100,17 +100,17 @@ Create this node in the macbot\_sensors package and name it pose\_odom.py.
 
 ![Shape
 
-Description automatically generated with medium confidence](<../.gitbook/assets/4 (2).png>)
+Description automatically generated with medium confidence](../.gitbook/assets/4.png)
 
 ![](../.gitbook/assets/5.png)
 
 ![Text
 
-Description automatically generated](<../.gitbook/assets/6 (1).png>)
+Description automatically generated](../.gitbook/assets/6.png)
 
 ![Text
 
-Description automatically generated](<../.gitbook/assets/7 (1).png>)
+Description automatically generated](../.gitbook/assets/7.png)
 
 Odometry data is crucial for the **move\_base** to work. The move\_base package will later be sending **/cmd\_vel** messages to the differential drive controller, which will send the desired wheel spin rates to the macbot\_node from the previous lab.
 
@@ -130,13 +130,13 @@ To get started, please launch the differential drive node:
 
 **roslaunch macbot\_physical diff\_drive.launch**
 
-![No description available.](../.gitbook/assets/8.png)
+![No description available.](<../.gitbook/assets/8 (1).png>)
 
 Next, the LiDAR sensor must be launched. Ensure to pass **true** for the **pub\_tf** argument. Doing this will let the laser\_scan\_matcher node publish the TF link between odom and base\_link.
 
 **Roslaunch macbot\_sensors lidar.launch pub\_tf=true**
 
-![No description available.](<../.gitbook/assets/9 (1).png>)
+![No description available.](../.gitbook/assets/9.png)
 
 Next, please launch **pose\_odom.py**. This node will be converting messages from laser\_scan\_matcher to odometry, as mentioned earlier. This is not the most accurate method of generating odometry data.
 
@@ -148,7 +148,7 @@ Lastly, the nodes **move\_base** and **amcl** must be launched for path planning
 
 **roslaunch macbot\_navigation amcl\_macbot.launch**
 
-![No description available.](<../.gitbook/assets/11 (1).png>)
+![No description available.](../.gitbook/assets/11.png)
 
 Looking back at the VMWare Ubuntu desktop, please launch RViz. Select **Add** in the bottom-left area of the window. Navigate through the menu pop-up to select the desired visualization formats.
 
@@ -158,13 +158,13 @@ Feel free to include information regarding the global planners, local planners, 
 
 ![Graphical user interface, application
 
-Description automatically generated](../.gitbook/assets/12.png)
+Description automatically generated](<../.gitbook/assets/12 (1).png>)
 
 Depending on the MacBot’s position within the map, publish a 2D pose update from the top toolbar so that the amcl is able to localize the robot within the generated map that was previously made.
 
 ![Website
 
-Description automatically generated with low confidence](../.gitbook/assets/13.png)
+Description automatically generated with low confidence](<../.gitbook/assets/13 (1).png>)
 
 ### Visualizing Path Planning in RViz <a href="#_toc80879394" id="_toc80879394"></a>
 
