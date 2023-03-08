@@ -2,7 +2,7 @@
 
 ### What is the MacBot?
 
-The MacBot is a robotics research and learning platform developed for the McMaster School of Engineering Practice and Technology by \[...]. It serves to teach Linux, ROS, sensors, and actuators through an interactive experience!
+The MacBot is a robotics research and learning platform developed for the McMaster School of Engineering Practice and Technology by Dr. Ishwar Singh, Reiner Schmidt, Eech Hsiao, Sohaib, and Anoop. It serves to teach Linux, ROS, sensors, and actuators through an interactive experience!
 
 ### What is GOROBO.IO
 

@@ -66,7 +66,7 @@ This lab will proceed with the **dwa\_local\_planner**, which uses the **D**ynam
 
 Cost maps represent the cost (difficulty) of navigating to areas of the map. Just as there are global and local planners, there are also global and local cost maps. Cost maps represent areas of tolerance a robot is able to smoothly navigate, and they are used to guide and route a safe while efficient path.
 
-![](../.gitbook/assets/0.jpeg)
+![](<../.gitbook/assets/0 (1).jpeg>)
 
 In the image above, the local cost map is within the white diamond / square surrounding the MacBot. The global cost map is overlaid on top of the map.
 
@@ -96,7 +96,7 @@ laser\_scan\_matcher geometry\_msgs/PoseStamped nav\_msgs/Odometry
 
 Create this node in the macbot\_sensors package and name it pose\_odom.py.
 
-![](<../.gitbook/assets/3 (1).png>)
+![](<../.gitbook/assets/3 (2).png>)
 
 ![Shape
 
@@ -110,7 +110,7 @@ Description automatically generated](../.gitbook/assets/6.png)
 
 ![Text
 
-Description automatically generated](<../.gitbook/assets/7 (1).png>)
+Description automatically generated](../.gitbook/assets/7.png)
 
 Odometry data is crucial for the **move\_base** to work. The move\_base package will later be sending **/cmd\_vel** messages to the differential drive controller, which will send the desired wheel spin rates to the macbot\_node from the previous lab.
 
@@ -164,7 +164,7 @@ Depending on the MacBot’s position within the map, publish a 2D pose update fr
 
 ![Website
 
-Description automatically generated with low confidence](../.gitbook/assets/13.png)
+Description automatically generated with low confidence](<../.gitbook/assets/13 (1).png>)
 
 ### Visualizing Path Planning in RViz <a href="#_toc80879394" id="_toc80879394"></a>
 

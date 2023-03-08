@@ -54,7 +54,7 @@ Ensure that the Git version control tool is installed. Do this by using the pack
 
 **sudo apt install git**
 
-![](../.gitbook/assets/1.png)
+![](<../.gitbook/assets/1 (1).png>)
 
 Next, open a new terminal window and navigate to **\~/\<catkin\_workspace\_name>/src.**
 
@@ -64,7 +64,7 @@ Clone the YDLidar\_ROS remote github repository into your catkin workspace sourc
 
 **git clone https://github.com/YDLIDAR/ydlidar\_ros.git**
 
-![](<../.gitbook/assets/3 (2).png>)
+![](../.gitbook/assets/3.png)
 
 Build the workspace by changing to the workspace root directory **\~/\<catkin\_workspace\_name>** and running **catkin\_make**.
 
@@ -80,7 +80,7 @@ Navigate to and open **\~/catkin\_ws/src/macbot/macbot\_sensors/launch/lidar.lau
 
 Alternatively, if a GUI is preferred GEDIT or VSCode are great options.
 
-![](../.gitbook/assets/7.png)
+![](<../.gitbook/assets/7 (1).png>)
 
 ![](<../.gitbook/assets/8 (1).png>)
 
@@ -174,7 +174,7 @@ Distribution Board Code ([https://code.roboteurs.com/snippets/10](https://code.r
 
 Connect to the board using USB-C.
 
-![](<../.gitbook/assets/13 (1).png>)
+![](../.gitbook/assets/13.png)
 
 Looking at the code, there is a **goLink** object called **myLink** that allows for communication with everything in our system.
 
