@@ -8,3 +8,6 @@ The MacBot is a robotics research and learning platform developed for the McMast
 
 It is a startup company created by a graduate of the McMaster BTech program to create robotic educational and research platforms.
 
+### How many MacBot robots are available?
+
+McMaster has \~30 units, distributed across the Engineering Technology Building 5th floor and the MARC undergraduate CAD/CAM laboratory.
