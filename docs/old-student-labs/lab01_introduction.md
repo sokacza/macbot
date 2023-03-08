@@ -80,7 +80,7 @@ Afterwards, a confirmation window will open. Click **Finish**.
 
 Next, notice that the virtual machine has been added.
 
-![](<../.gitbook/assets/5 (1).jpeg>)
+![](../.gitbook/assets/5.jpeg)
 
 But before it can be run, it is important that you **Edit the virtual machine settings**.
 
