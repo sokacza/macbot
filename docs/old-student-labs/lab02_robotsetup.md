@@ -54,11 +54,11 @@ Ensure that the Git version control tool is installed. Do this by using the pack
 
 **sudo apt install git**
 
-![](<../.gitbook/assets/1 (2).png>)
+![](../.gitbook/assets/1.png)
 
 Next, open a new terminal window and navigate to **\~/\<catkin\_workspace\_name>/src.**
 
-![](../.gitbook/assets/2.png)
+![](<../.gitbook/assets/2 (1).png>)
 
 Clone the YDLidar\_ROS remote github repository into your catkin workspace source folder using the following command.
 
@@ -68,21 +68,21 @@ Clone the YDLidar\_ROS remote github repository into your catkin workspace sourc
 
 Build the workspace by changing to the workspace root directory **\~/\<catkin\_workspace\_name>** and running **catkin\_make**.
 
-![](<../.gitbook/assets/4 (1).png>)
+![](<../.gitbook/assets/4 (2).png>)
 
 ### Setting Up the LiDAR Publisher Node <a href="#_toc75866304" id="_toc75866304"></a>
 
-![](<../.gitbook/assets/5 (1).jpeg>)
+![](../.gitbook/assets/5.jpeg)
 
 Navigate to and open **\~/catkin\_ws/src/macbot/macbot\_sensors/launch/lidar.launch**
 
-![](../.gitbook/assets/6.png)
+![](<../.gitbook/assets/6 (1).png>)
 
 Alternatively, if a GUI is preferred GEDIT or VSCode are great options.
 
 ![](../.gitbook/assets/7.png)
 
-![](../.gitbook/assets/8.png)
+![](<../.gitbook/assets/8 (1).png>)
 
 First, the YDLIDAR node must be added in our launch file. Since there are different models of LiDAR available from this company, the parameters must be set as outlined in the README.md file located in the YDLidar\_ROS GitHub repository([https://github.com/YDLIDAR/ydlidar\_ros](https://github.com/YDLIDAR/ydlidar\_ros)).. The model provided is the **X2L LiDAR** and the parameters specific to this model must be configured according to the settings listed on the packages GitHub page One thing to keep in mind is that the **frame\_id** of the LiDAR node is changed to **/laser** in order to have a functioning TF Tree. A transform tree is another way of describing transforms that influence each other and branch out in a tree hierarchy.
 
@@ -128,7 +128,7 @@ More info: [http://wiki.ros.org/urdf/XML/joint](http://wiki.ros.org/urdf/XML/joi
 
 In short, they are the physical connections of the robot model that are actuated by joints. The **child** link points down the hierarchy of connections and the **parent** link points up the hierarchy.
 
-![](../.gitbook/assets/10.png)
+![](<../.gitbook/assets/10 (1).png>)
 
 The advertised transform MQTT namespace could potentially just be renamed, but it allows us the opportunity to learn about **TF remapping.** TF remapping alters which topic transform data will be communicated over. This can be done by doing the following:
 

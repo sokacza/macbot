@@ -6,7 +6,7 @@
 PDF Format
 {% endfile %}
 
-{% file src="../.gitbook/assets/Lab04_Navigation.docx" %}
+{% file src="../.gitbook/assets/Lab04_Navigation (1).docx" %}
 WORD Format
 {% endfile %}
 
@@ -78,7 +78,7 @@ Move\_base is a ROS package that coordinates between global planner and the loca
 
 ![Text
 
-Description automatically generated](../.gitbook/assets/1.png)
+Description automatically generated](<../.gitbook/assets/1 (2).png>)
 
 It is advised to read through the following guides before attempting to modify planning parameters. Changing these values could impact the expected movement of the robot. Ensure that the programmer has ample floor space to test.
 
@@ -96,17 +96,17 @@ laser\_scan\_matcher geometry\_msgs/PoseStamped nav\_msgs/Odometry
 
 Create this node in the macbot\_sensors package and name it pose\_odom.py.
 
-![](../.gitbook/assets/3.png)
+![](<../.gitbook/assets/3 (1).png>)
 
 ![Shape
 
-Description automatically generated with medium confidence](<../.gitbook/assets/4 (2).png>)
+Description automatically generated with medium confidence](<../.gitbook/assets/4 (1).png>)
 
 ![](../.gitbook/assets/5.png)
 
 ![Text
 
-Description automatically generated](<../.gitbook/assets/6 (1).png>)
+Description automatically generated](../.gitbook/assets/6.png)
 
 ![Text
 
@@ -130,7 +130,7 @@ To get started, please launch the differential drive node:
 
 **roslaunch macbot\_physical diff\_drive.launch**
 
-![No description available.](<../.gitbook/assets/8 (1).png>)
+![No description available.](../.gitbook/assets/8.png)
 
 Next, the LiDAR sensor must be launched. Ensure to pass **true** for the **pub\_tf** argument. Doing this will let the laser\_scan\_matcher node publish the TF link between odom and base\_link.
 
@@ -142,7 +142,7 @@ Next, please launch **pose\_odom.py**. This node will be converting messages fro
 
 **rosrun macbot\_sensors pose\_odom.py**
 
-![No description available.](<../.gitbook/assets/10 (1).png>)
+![No description available.](../.gitbook/assets/10.png)
 
 Lastly, the nodes **move\_base** and **amcl** must be launched for path planning.
 

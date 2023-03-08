@@ -1,7 +1,7 @@
 # Table of contents
 
 * [About](README.md)
-* [Project Install](project-install.md)
+* [Project Install](install.md)
 * [Page 1](page-1.md)
 
 ## Old Student Labs

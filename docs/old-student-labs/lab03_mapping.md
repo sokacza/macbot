@@ -22,7 +22,7 @@ Mapping Launch Files 2
 
 This lab will investigate 2D localization and mapping in a physical environment. The map will be built by driving the MacBot around and collecting data about the local environment using a laser scanner. Configuration parameters will be set in the launch file.
 
-![](<../.gitbook/assets/0 (2).jpeg>)
+![](<../.gitbook/assets/0 (1).jpeg>)
 
 ### SLAM <a href="#_toc78451853" id="_toc78451853"></a>
 
@@ -56,11 +56,11 @@ Next, please include the following nodes to the diff\_drive launch file:
 
 **\<node pkg = "teleop\_twist\_keyboard" type = "teleop\_twist\_keyboard.py" name = "teleop\_twist\_keyboard" output = "screen"/>**
 
-![No description available.](<../.gitbook/assets/2 (1).png>)
+![No description available.](../.gitbook/assets/2.png)
 
 ![Text
 
-Description automatically generated](<../.gitbook/assets/3 (1).png>)
+Description automatically generated](../.gitbook/assets/3.png)
 
 This allows for the launching of both the macbot\_node and tf\_broadcaster without needing to run additional launch commands. The teleop\_twist\_keyboard allows for the remote control of the macbot.
 
