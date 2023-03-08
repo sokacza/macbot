@@ -66,7 +66,7 @@ This lab will proceed with the **dwa\_local\_planner**, which uses the **D**ynam
 
 Cost maps represent the cost (difficulty) of navigating to areas of the map. Just as there are global and local planners, there are also global and local cost maps. Cost maps represent areas of tolerance a robot is able to smoothly navigate, and they are used to guide and route a safe while efficient path.
 
-![](<../.gitbook/assets/0 (1).jpeg>)
+![](<../.gitbook/assets/0 (2).jpeg>)
 
 In the image above, the local cost map is within the white diamond / square surrounding the MacBot. The global cost map is overlaid on top of the map.
 
@@ -78,7 +78,7 @@ Move\_base is a ROS package that coordinates between global planner and the loca
 
 ![Text
 
-Description automatically generated](<../.gitbook/assets/1 (2).png>)
+Description automatically generated](../.gitbook/assets/1.png)
 
 It is advised to read through the following guides before attempting to modify planning parameters. Changing these values could impact the expected movement of the robot. Ensure that the programmer has ample floor space to test.
 
@@ -86,7 +86,7 @@ It is advised to read through the following guides before attempting to modify p
 
 ### The MacBot Navigation Setup <a href="#_toc80879393" id="_toc80879393"></a>
 
-![](../.gitbook/assets/2.jpeg)
+![](<../.gitbook/assets/2 (1).jpeg>)
 
 Running **rosrun rqt\_graph rqt\_graph** after the individual MacBot nodes have been started will display a high-level overview of the communication network between individual ROS nodes.
 
@@ -96,21 +96,21 @@ laser\_scan\_matcher geometry\_msgs/PoseStamped nav\_msgs/Odometry
 
 Create this node in the macbot\_sensors package and name it pose\_odom.py.
 
-![](<../.gitbook/assets/3 (2).png>)
+![](../.gitbook/assets/3.png)
 
 ![Shape
 
-Description automatically generated with medium confidence](<../.gitbook/assets/4 (1).png>)
+Description automatically generated with medium confidence](<../.gitbook/assets/4 (2).png>)
 
 ![](../.gitbook/assets/5.png)
 
 ![Text
 
-Description automatically generated](../.gitbook/assets/6.png)
+Description automatically generated](<../.gitbook/assets/6 (1).png>)
 
 ![Text
 
-Description automatically generated](../.gitbook/assets/7.png)
+Description automatically generated](<../.gitbook/assets/7 (1).png>)
 
 Odometry data is crucial for the **move\_base** to work. The move\_base package will later be sending **/cmd\_vel** messages to the differential drive controller, which will send the desired wheel spin rates to the macbot\_node from the previous lab.
 
@@ -136,7 +136,7 @@ Next, the LiDAR sensor must be launched. Ensure to pass **true** for the **pub\_
 
 **Roslaunch macbot\_sensors lidar.launch pub\_tf=true**
 
-![No description available.](../.gitbook/assets/9.png)
+![No description available.](<../.gitbook/assets/9 (1).png>)
 
 Next, please launch **pose\_odom.py**. This node will be converting messages from laser\_scan\_matcher to odometry, as mentioned earlier. This is not the most accurate method of generating odometry data.
 
@@ -148,7 +148,7 @@ Lastly, the nodes **move\_base** and **amcl** must be launched for path planning
 
 **roslaunch macbot\_navigation amcl\_macbot.launch**
 
-![No description available.](../.gitbook/assets/11.png)
+![No description available.](<../.gitbook/assets/11 (1).png>)
 
 Looking back at the VMWare Ubuntu desktop, please launch RViz. Select **Add** in the bottom-left area of the window. Navigate through the menu pop-up to select the desired visualization formats.
 
@@ -164,11 +164,11 @@ Depending on the MacBot’s position within the map, publish a 2D pose update fr
 
 ![Website
 
-Description automatically generated with low confidence](<../.gitbook/assets/13 (1).png>)
+Description automatically generated with low confidence](../.gitbook/assets/13.png)
 
 ### Visualizing Path Planning in RViz <a href="#_toc80879394" id="_toc80879394"></a>
 
-![](<../.gitbook/assets/14 (1).png>)\
+![](../.gitbook/assets/14.png)\
 
 
 After publishing the navigation goal, a global plan will be generated within RViz. Soon after, the local plan will be generated as the robot begins detecting obstacles.

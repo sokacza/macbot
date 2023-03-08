@@ -64,23 +64,23 @@ Clone the YDLidar\_ROS remote github repository into your catkin workspace sourc
 
 **git clone https://github.com/YDLIDAR/ydlidar\_ros.git**
 
-![](../.gitbook/assets/3.png)
+![](<../.gitbook/assets/3 (2).png>)
 
 Build the workspace by changing to the workspace root directory **\~/\<catkin\_workspace\_name>** and running **catkin\_make**.
 
-![](<../.gitbook/assets/4 (2).png>)
+![](<../.gitbook/assets/4 (1).png>)
 
 ### Setting Up the LiDAR Publisher Node <a href="#_toc75866304" id="_toc75866304"></a>
 
-![](../.gitbook/assets/5.jpeg)
+![](<../.gitbook/assets/5 (1).jpeg>)
 
 Navigate to and open **\~/catkin\_ws/src/macbot/macbot\_sensors/launch/lidar.launch**
 
-![](<../.gitbook/assets/6 (1).png>)
+![](../.gitbook/assets/6.png)
 
 Alternatively, if a GUI is preferred GEDIT or VSCode are great options.
 
-![](<../.gitbook/assets/7 (1).png>)
+![](../.gitbook/assets/7.png)
 
 ![](<../.gitbook/assets/8 (1).png>)
 
@@ -106,7 +106,7 @@ First, the YDLIDAR node must be added in our launch file. Since there are differ
 
 ![Text
 
-Description automatically generated](<../.gitbook/assets/9 (1).png>)
+Description automatically generated](../.gitbook/assets/9.png)
 
 And as a reminder, in the **macbot\_description/urdf/robot\_textured.xacro** file, the LiDAR child link is referred to as:
 
@@ -156,7 +156,7 @@ Motor Drivers → Distribution Board → CAN Gateway → Jetson Nano
 
 The role of the distribution board is to distribute power and communicate with devices. It powers the motors and handles position feedback from the encoders. The development environment that will be used to program the distribution board is PlatformIO. PlatformIO is installed on top of existing editors and includes support for a wide variety of microprocessors and well as access to a large repository of compatible libraries. However, in this case some custom libraries will be used that cannot be found using the library manager.
 
-![](<../.gitbook/assets/11 (1).png>)
+![](../.gitbook/assets/11.png)
 
 Please add the following libraries to the PlatformIO project:
 
@@ -174,7 +174,7 @@ Distribution Board Code ([https://code.roboteurs.com/snippets/10](https://code.r
 
 Connect to the board using USB-C.
 
-![](../.gitbook/assets/13.png)
+![](<../.gitbook/assets/13 (1).png>)
 
 Looking at the code, there is a **goLink** object called **myLink** that allows for communication with everything in our system.
 
@@ -198,7 +198,7 @@ myLink.setInt("ib", analogRead(VBUS\_SENSE));
 
 Navigate to an open directory and download the following: [https://code.roboteurs.com/maciot-libs/golink-env](https://code.roboteurs.com/maciot-libs/golink-env).
 
-![](../.gitbook/assets/14.png)
+![](<../.gitbook/assets/14 (1).png>)
 
 First, verify that python3 is installed on the macbot.
 

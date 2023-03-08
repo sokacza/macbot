@@ -40,7 +40,7 @@ Please launch the following:
 
 **roslaunch macbot\_navigation gmap\_macbot.launch**
 
-![No description available.](../.gitbook/assets/1.png)
+![No description available.](<../.gitbook/assets/1 (2).png>)
 
 The ydlidar node is already included in the launch file therefore it is unnecessary to launch the macbot\_sensors LiDAR node.
 
