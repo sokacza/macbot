@@ -6,7 +6,7 @@
 PDF Format
 {% endfile %}
 
-{% file src="../.gitbook/assets/Lab04_Navigation.docx" %}
+{% file src="../.gitbook/assets/Lab04_Navigation (1).docx" %}
 WORD Format
 {% endfile %}
 
@@ -86,7 +86,7 @@ It is advised to read through the following guides before attempting to modify p
 
 ### The MacBot Navigation Setup <a href="#_toc80879393" id="_toc80879393"></a>
 
-![](<../.gitbook/assets/2 (1).jpeg>)
+![](../.gitbook/assets/2.jpeg)
 
 Running **rosrun rqt\_graph rqt\_graph** after the individual MacBot nodes have been started will display a high-level overview of the communication network between individual ROS nodes.
 
@@ -96,17 +96,17 @@ laser\_scan\_matcher geometry\_msgs/PoseStamped nav\_msgs/Odometry
 
 Create this node in the macbot\_sensors package and name it pose\_odom.py.
 
-![](../.gitbook/assets/3.png)
+![](<../.gitbook/assets/3 (2).png>)
 
 ![Shape
 
-Description automatically generated with medium confidence](../.gitbook/assets/4.png)
+Description automatically generated with medium confidence](<../.gitbook/assets/4 (2).png>)
 
 ![](../.gitbook/assets/5.png)
 
 ![Text
 
-Description automatically generated](../.gitbook/assets/6.png)
+Description automatically generated](<../.gitbook/assets/6 (1).png>)
 
 ![Text
 
@@ -136,19 +136,19 @@ Next, the LiDAR sensor must be launched. Ensure to pass **true** for the **pub\_
 
 **Roslaunch macbot\_sensors lidar.launch pub\_tf=true**
 
-![No description available.](../.gitbook/assets/9.png)
+![No description available.](<../.gitbook/assets/9 (1).png>)
 
 Next, please launch **pose\_odom.py**. This node will be converting messages from laser\_scan\_matcher to odometry, as mentioned earlier. This is not the most accurate method of generating odometry data.
 
 **rosrun macbot\_sensors pose\_odom.py**
 
-![No description available.](../.gitbook/assets/10.png)
+![No description available.](<../.gitbook/assets/10 (1).png>)
 
 Lastly, the nodes **move\_base** and **amcl** must be launched for path planning.
 
 **roslaunch macbot\_navigation amcl\_macbot.launch**
 
-![No description available.](../.gitbook/assets/11.png)
+![No description available.](<../.gitbook/assets/11 (1).png>)
 
 Looking back at the VMWare Ubuntu desktop, please launch RViz. Select **Add** in the bottom-left area of the window. Navigate through the menu pop-up to select the desired visualization formats.
 
@@ -158,7 +158,7 @@ Feel free to include information regarding the global planners, local planners, 
 
 ![Graphical user interface, application
 
-Description automatically generated](<../.gitbook/assets/12 (1).png>)
+Description automatically generated](../.gitbook/assets/12.png)
 
 Depending on the MacBot’s position within the map, publish a 2D pose update from the top toolbar so that the amcl is able to localize the robot within the generated map that was previously made.
 
@@ -168,7 +168,7 @@ Description automatically generated with low confidence](<../.gitbook/assets/13 
 
 ### Visualizing Path Planning in RViz <a href="#_toc80879394" id="_toc80879394"></a>
 
-![](../.gitbook/assets/14.png)\
+![](<../.gitbook/assets/14 (1).png>)\
 
 
 After publishing the navigation goal, a global plan will be generated within RViz. Soon after, the local plan will be generated as the robot begins detecting obstacles.

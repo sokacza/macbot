@@ -68,7 +68,7 @@ After you select **Next**, choose the following settings below:
 
 Once you have the options selected, press **Next**. You can be creative with the name of your virtual machine. Please leave the location as the default (do not change it).
 
-![](../.gitbook/assets/2.jpeg)
+![](<../.gitbook/assets/2 (1).jpeg>)
 
 **40 GB** of space will be allocated for the Virtual Machine. Anything around 30 GB should be fine. Select "Store virtual disk as a single file".
 
@@ -80,7 +80,7 @@ Afterwards, a confirmation window will open. Click **Finish**.
 
 Next, notice that the virtual machine has been added.
 
-![](<../.gitbook/assets/5 (1).jpeg>)
+![](../.gitbook/assets/5.jpeg)
 
 But before it can be run, it is important that you **Edit the virtual machine settings**.
 

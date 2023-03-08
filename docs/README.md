@@ -6,7 +6,7 @@ The MacBot is a robotics research and learning platform developed for the McMast
 
 ### What is GOROBO.IO
 
-It is a startup company created by a graduate of the McMaster BTech program to create robotic educational and research platforms.
+It is a startup company created by graduates of McMaster University to create robotic educational and research platforms.
 
 ### How many MacBot robots are available?
 

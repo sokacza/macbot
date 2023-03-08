@@ -56,11 +56,11 @@ Next, please include the following nodes to the diff\_drive launch file:
 
 **\<node pkg = "teleop\_twist\_keyboard" type = "teleop\_twist\_keyboard.py" name = "teleop\_twist\_keyboard" output = "screen"/>**
 
-![No description available.](../.gitbook/assets/2.png)
+![No description available.](<../.gitbook/assets/2 (1).png>)
 
 ![Text
 
-Description automatically generated](<../.gitbook/assets/3 (1).png>)
+Description automatically generated](../.gitbook/assets/3.png)
 
 This allows for the launching of both the macbot\_node and tf\_broadcaster without needing to run additional launch commands. The teleop\_twist\_keyboard allows for the remote control of the macbot.
 
@@ -68,4 +68,4 @@ Next, please launch **diff\_drive.launch**.
 
 ![Text
 
-Description automatically generated](<../.gitbook/assets/4 (1).png>)
+Description automatically generated](../.gitbook/assets/4.png)
