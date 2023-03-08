@@ -6,7 +6,7 @@
 
 ## 📖 Student Labs
 
-* [Student Labs](student-labs/student-labs.md)
+* [LiDAR](student-labs/lidar.md)
 
 ## Old Student Labs
 

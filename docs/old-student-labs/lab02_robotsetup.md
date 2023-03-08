@@ -48,7 +48,7 @@ Start your local virtual machine and log in.
 
 SSH into the MacBot.
 
-![](../.gitbook/assets/0.png)
+![](<../.gitbook/assets/0 (1).png>)
 
 Ensure that the Git version control tool is installed. Do this by using the package manager.
 
@@ -72,7 +72,7 @@ Build the workspace by changing to the workspace root directory **\~/\<catkin\_w
 
 ### Setting Up the LiDAR Publisher Node <a href="#_toc75866304" id="_toc75866304"></a>
 
-![](<../.gitbook/assets/5 (1).jpeg>)
+![](<../.gitbook/assets/5 (1) (1).jpeg>)
 
 Navigate to and open **\~/catkin\_ws/src/macbot/macbot\_sensors/launch/lidar.launch**
 
@@ -128,7 +128,7 @@ More info: [http://wiki.ros.org/urdf/XML/joint](http://wiki.ros.org/urdf/XML/joi
 
 In short, they are the physical connections of the robot model that are actuated by joints. The **child** link points down the hierarchy of connections and the **parent** link points up the hierarchy.
 
-![](../.gitbook/assets/10.png)
+![](<../.gitbook/assets/10 (2).png>)
 
 The advertised transform MQTT namespace could potentially just be renamed, but it allows us the opportunity to learn about **TF remapping.** TF remapping alters which topic transform data will be communicated over. This can be done by doing the following:
 
@@ -156,7 +156,7 @@ Motor Drivers → Distribution Board → CAN Gateway → Jetson Nano
 
 The role of the distribution board is to distribute power and communicate with devices. It powers the motors and handles position feedback from the encoders. The development environment that will be used to program the distribution board is PlatformIO. PlatformIO is installed on top of existing editors and includes support for a wide variety of microprocessors and well as access to a large repository of compatible libraries. However, in this case some custom libraries will be used that cannot be found using the library manager.
 
-![](../.gitbook/assets/11.png)
+![](<../.gitbook/assets/11 (1).png>)
 
 Please add the following libraries to the PlatformIO project:
 
@@ -174,7 +174,7 @@ Distribution Board Code ([https://code.roboteurs.com/snippets/10](https://code.r
 
 Connect to the board using USB-C.
 
-![](../.gitbook/assets/13.png)
+![](<../.gitbook/assets/13 (2).png>)
 
 Looking at the code, there is a **goLink** object called **myLink** that allows for communication with everything in our system.
 
@@ -198,31 +198,31 @@ myLink.setInt("ib", analogRead(VBUS\_SENSE));
 
 Navigate to an open directory and download the following: [https://code.roboteurs.com/maciot-libs/golink-env](https://code.roboteurs.com/maciot-libs/golink-env).
 
-![](../.gitbook/assets/14.png)
+![](<../.gitbook/assets/14 (2).png>)
 
 First, verify that python3 is installed on the macbot.
 
 **sudo apt-get install python3 python3-pip**
 
-![](../.gitbook/assets/15.png)
+![](<../.gitbook/assets/15 (1).png>)
 
 Next, please navigate to **golink-env-master/extern/pybinn**. Manually install the python package using the following command:
 
 **sudo python3 setup.py install**
 
-![](../.gitbook/assets/16.png)
+![](<../.gitbook/assets/16 (1).png>)
 
 Next navigate to **golink-env-master/extern/python-can-isotp**. And repeat the install process:
 
 **sudo python3 setup.py install**
 
-![](../.gitbook/assets/17.png)
+![](<../.gitbook/assets/17 (1).png>)
 
 Finally, install the python-can package using the pip3 package manager:
 
 **sudo pip3 install python-can**
 
-![](../.gitbook/assets/18.png)
+![](<../.gitbook/assets/18 (1).png>)
 
 Now that the CAN bus packages have been installed, navigate to **golink-env-master/utils**. Run the following command to verify the USB name:
 
@@ -230,7 +230,7 @@ Now that the CAN bus packages have been installed, navigate to **golink-env-mast
 
 It will most likely read ttyUSB0. Linux represents devices as files on the filesystem. This simplifies the way that software exchanges information with devices.
 
-![](../.gitbook/assets/19.png)
+![](<../.gitbook/assets/19 (1).png>)
 
 Use nano to open the **golink-bus-init.sh** file and verify that the device reads:
 

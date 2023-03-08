@@ -86,7 +86,7 @@ It is advised to read through the following guides before attempting to modify p
 
 ### The MacBot Navigation Setup <a href="#_toc80879393" id="_toc80879393"></a>
 
-![](../.gitbook/assets/2.jpeg)
+![](<../.gitbook/assets/2 (2).jpeg>)
 
 Running **rosrun rqt\_graph rqt\_graph** after the individual MacBot nodes have been started will display a high-level overview of the communication network between individual ROS nodes.
 
@@ -148,7 +148,7 @@ Lastly, the nodes **move\_base** and **amcl** must be launched for path planning
 
 **roslaunch macbot\_navigation amcl\_macbot.launch**
 
-![No description available.](<../.gitbook/assets/11 (1).png>)
+![No description available.](<../.gitbook/assets/11 (1) (1).png>)
 
 Looking back at the VMWare Ubuntu desktop, please launch RViz. Select **Add** in the bottom-left area of the window. Navigate through the menu pop-up to select the desired visualization formats.
 

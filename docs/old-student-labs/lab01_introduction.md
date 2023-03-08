@@ -64,7 +64,7 @@ On VMware Workstation, please select **Create a New Virtual Machine**. Then sele
 
 After you select **Next**, choose the following settings below:
 
-![](../.gitbook/assets/1.jpeg)
+![](<../.gitbook/assets/1 (1).jpeg>)
 
 Once you have the options selected, press **Next**. You can be creative with the name of your virtual machine. Please leave the location as the default (do not change it).
 
@@ -72,11 +72,11 @@ Once you have the options selected, press **Next**. You can be creative with the
 
 **40 GB** of space will be allocated for the Virtual Machine. Anything around 30 GB should be fine. Select "Store virtual disk as a single file".
 
-![](../.gitbook/assets/3.jpeg)
+![](<../.gitbook/assets/3 (1).jpeg>)
 
 Afterwards, a confirmation window will open. Click **Finish**.
 
-![](../.gitbook/assets/4.jpeg)
+![](<../.gitbook/assets/4 (1).jpeg>)
 
 Next, notice that the virtual machine has been added.
 
