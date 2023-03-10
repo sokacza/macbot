@@ -15,7 +15,7 @@ PSWD: %A0AB1B83C3B4
 | macbot01 | 1c:bf:ce:f6:5d:b5 | Working |
 | macbot02 | 1c:bf:ce:ef:13:06 | Working |
 | macbot03 | ac:15:a2:af:4c:77 | Working |
-| macbot04 |                   | Working |
+| macbot04 | 1c:bf:ce:a9:ed:5b | Working |
 | macbot05 |                   | Working |
 | macbot06 |                   | Working |
 | macbot07 |                   | Working |
