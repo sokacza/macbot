@@ -2,7 +2,7 @@
 
 * [About](README.md)
 * [Project Install](install.md)
-* [MacBot Status](macbot-status.md)
+* [MacBot Status](page-1.md)
 
 ## 📖 Student Labs
 

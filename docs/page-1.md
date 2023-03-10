@@ -6,7 +6,7 @@
 
 SSID: MARC269
 
-PSWD:&#x20;
+PSWD: %A0AB1B83C3B4
 
 </details>
 
