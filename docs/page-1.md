@@ -2,6 +2,16 @@
 
 <details>
 
+<summary>MacBot Login</summary>
+
+User: jnano
+
+Pass: 9055259140
+
+</details>
+
+<details>
+
 <summary>MARC269 WiFi Login</summary>
 
 SSID: MARC269
