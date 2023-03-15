@@ -6,12 +6,13 @@
 
 ## 📖 Student Labs
 
-* [LiDAR](student-labs/lidar.md)
+* [LiDAR](https://github.com/sokacza/macbot/blob/main/docs/Labs/LiDAR/LiDAR.pdf)
+* [MacBot](https://github.com/sokacza/macbot/blob/main/docs/Labs/MacBot/MacBot.pdf)
 
-## Old Student Labs
+## 🗃 Old Student Labs
 
-* [Lab01\_Introduction](old-student-labs/lab01\_introduction.md)
-* [Lab02\_RobotSetup](old-student-labs/lab02\_robotsetup.md)
-* [Lab03\_Mapping](old-student-labs/lab03\_mapping.md)
-* [Lab04\_Navigation](old-student-labs/lab04\_navigation.md)
-* [Lab05\_Teleoperation](old-student-labs/lab05\_teleoperation.md)
+* [Lab01\_Introduction](https://github.com/sokacza/macbot/blob/main/docs/Labs/Lab01\_Introduction/Lab01\_Introduction.pdf)
+* [Lab02\_RobotSetup](https://github.com/sokacza/macbot/blob/main/docs/Labs/Lab02\_RobotSetup/Lab02\_RobotSetup.pdf)
+* [Lab03\_Mapping](https://github.com/sokacza/macbot/blob/main/docs/Labs/Lab03\_Mapping/Lab03\_Mapping.pdf)
+* [Lab04\_Navigation](https://github.com/sokacza/macbot/blob/main/docs/Labs/Lab04\_Navigation/Lab04\_Navigation.pdf)
+* [Lab05\_Teleoperation](https://github.com/sokacza/macbot/blob/main/docs/Labs/Lab05\_Teleoperation/Lab05\_Teleoperation.pdf)
