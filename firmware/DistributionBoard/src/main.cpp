@@ -41,8 +41,7 @@ void setup() {
   myLink.init(250E3, 2);
   myLink.setBroadcastRate(1000);
   Serial.begin(115200);
-  pinMode(POWER_RELAY, OUTPUT);
-  digitalWrite(POWER_RELAY, HIGH);
+
 
   xTaskCreatePinnedToCore(
       Task1code, /* Function to implement the task */
@@ -61,6 +60,12 @@ void setup() {
       2,  /* Priority of the task */
       &Task2,  /* Task handle. */
       1); /* Core where the task should run */
+
+
+
+      delay(2000);
+      pinMode(POWER_RELAY, OUTPUT);
+      digitalWrite(POWER_RELAY, HIGH);
 }
 
 
